@@ -1,2 +1,0 @@
-model,random_state,train_MAE,test_MAE,data_source
-RandomForestRegressor,414,1.5090733848222486,2.8196098021672134,ergast_api

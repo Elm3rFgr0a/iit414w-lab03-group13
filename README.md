@@ -1,28 +1,18 @@
-Run RandomForestRegressor for finishing position
+# Lab 3: F1 Points Predictor 🏎️ 
 
-Instructions
+**Dependencies:**
+- `pandas`
+- `numpy`
+- `scikit-learn`
+- `requests`
 
-1. Create and activate a Python venv (recommended):
+## Reproduction Instructions
+1. Clone this repository locally or load it in a VS Code workspace.
+2. Install dependencies: `pip install pandas numpy scikit-learn requests`.
+3. Open `lab3_model_comparison.ipynb`.
+4. Ensure the Jupyter Kernel is set to your Python 3 environment.
+5. In VS Code or Jupyter Lab, click **Kernel → Restart & Run All**. 
+6. Execution takes < 1 minute (Jolpica API requests fetch 3 seasons of data directly via standard HTTP).
+7. The comparison table generates dynamically in the output of the final cell.
 
-```bash
-python -m venv .venv
-.\.venv\Scripts\activate
-```
-
-2. Install requirements:
-
-```bash
-pip install pandas numpy scikit-learn requests
-```
-
-3. Run the script:
-
-```bash
-python run_rf_position.py
-```
-
-Behavior
-
-- The script tries to download race results (2022–2024) from the ergast mirror API and caches them at `data/processed/results_2022_2024.csv`.
-- If the download fails (no internet or API blocked), the script falls back to a synthetic dataset and still trains the model so you can reproduce the steps locally.
-- Output: `rf_position_results.csv` in `labs/lab3/` with `train_MAE` and `test_MAE` and `data_source`.
+*(Using RANDOM_SEED = 414 across all sklearn operations ensures reproducibility).*
