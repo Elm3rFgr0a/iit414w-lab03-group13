@@ -5,10 +5,11 @@
 - `numpy`
 - `scikit-learn`
 - `requests`
+- `tabulate`
 
 ## Reproduction Instructions
 1. Clone this repository locally or load it in a VS Code workspace.
-2. Install dependencies: `pip install pandas numpy scikit-learn requests`.
+2. Install dependencies: `pip install pandas numpy scikit-learn requests tabulate`.
 3. Open `lab3_model_comparison.ipynb`.
 4. Ensure the Jupyter Kernel is set to your Python 3 environment.
 5. In VS Code or Jupyter Lab, click **Kernel → Restart & Run All**. 
